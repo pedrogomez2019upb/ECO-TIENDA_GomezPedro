@@ -188,3 +188,32 @@ table,th,td{
     background: #04AA6D; /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
+
+  .contenedor{
+    width:100px;
+    margin-left: 50px;
+    margin-top: 10px;
+    background-color: white;
+  }
+
+  .contenedorcito{
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+  #desde{
+    width: 5px;
+    margin-left:20px;
+    text-align: center;
+  }
+  #hasta{
+    width: 5px;
+    margin-right:20px;
+  }
+
+  .aja{
+    display:flex;
+    justify-content: center;
+  }
+
