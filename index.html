@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>ECO-TIENDA</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,11 +14,11 @@
 
 <body>
   <header>
-    <div id="principal" class="row">
+    <div id="principal" class="row" style="border:1px solid red;">
       <div class="col">
         <!-- LOGO  -->
         <div class="logo">
-          <img class="imagen" src="./src-eco-tienda/logo.jpg" alt="">
+          <img class="imagen" src="./img/logo.jpg" alt="">
         </div>
       </div>
       <div id="cajaBuscador" class="col-sm">
@@ -60,40 +60,65 @@
             <td class="justify" id="verdePuro">Mi Carrito</td>
           </tr>
         </table>
-
       </div>
-
-
-
   </header>
-  <!-- The sidebar -->
-  <div class="sidebar">
-    <div class="cajita">
-      <table>
-        <tr>
-          
-          <td >
-            
-            <div id="filaBarrita" class="row" >
-              <a id="rojito">Precio</a>
-              <table id="rojito">
-                <tr id="rojito">
+  <div class="row" id="rojito">
+    <div class="col-sm-40" id="rojito">
+      <!-- The sidebar -->
+      <div class="sidebar" id="rojito">
+        <div class="cajita">
+          <table>
+            <div class="row">
+              <tr>
+                <div class="col">
                   <td>
-                    <div id="colBarrita" class="slidecontainer">
-                      <input type="range" min="1" max="100" value="50">
-                    </div>
+                    <div id="filaBarrita" class="row">
+                      <p style="font-weight:bold;">Precio</p>
+                      <table>
+                        <div class="row">
+                          <tr>
+                            <div class="col">
+                              <td>
+                                <div id="colBarrita" class="slidecontainer">
+                                  <input type="range" min="1" max="100" value="50">
+                                </div>
+                              </td>
+                            </div>
+                          </tr>
+                        </div>
+                      </table>
+                      <div class="row">
+                        <table>
+                          <tr>
+                            <div class="col">
+                              <td id="colium">
+                                <a id="nombres" href="">Desde</a>
+                                <input id="rangos" type="text" placeholder="0">
+                              </td>
+                            </div>
+                            <div class="col">
+                              <td id="colium">
+                                <a id="nombres" href="">De</a>
+                                <input id="rangos" type="text" placeholder="0">
+                              </td>
+                            </div>
+                          </tr>
+                          <tr>
+                            <td>
+                            </td>
+                          </tr>
+                      </div>
                   </td>
-                </tr>
-              </table>
-            </div>
-          </td>
-        </tr>
-      </table>
-
+                </div>
+          </table>
+        </div>
+      </div>
     </div>
-    <!-- <a class="active" href="#home">Home</a> -->
+    <div class="col" id="rojito">
+      Aqui estoy
+    </div>
   </div>
-  </div>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

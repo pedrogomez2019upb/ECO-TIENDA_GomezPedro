@@ -10,6 +10,7 @@
 
 body {
     font-family: Geneva, Verdana, sans-serif;
+    
 }
 
 a {
@@ -140,7 +141,7 @@ td {
 /* The side navigation menu */
 
 #filaBarrita {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: auto;
     padding: 10px;
     background-color: white;
@@ -268,4 +269,28 @@ div.content {
     /* Green background */
     cursor: pointer;
     /* Cursor on hover */
+}
+
+
+/*Rangos*/
+
+#nombres{
+    font-size: 12px;
+}
+#rangos{
+    width: 80px;
+    height: 50px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    margin-left: 13px;
+    background-color: rgb(247,246,251);
+    border:1px solid gray;
+    border-radius: 3px;
+    
+    
+}
+
+#colium{
+    border:1px solid red;
 }
