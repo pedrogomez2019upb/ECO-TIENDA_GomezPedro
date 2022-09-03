@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-#rojito{
+#rojito {
     border: 1px solid red;
 }
 
@@ -126,7 +126,7 @@ td {
 }
 
 
-#verdePuro{
+#verdePuro {
 
     text-align: center;
     font-size: small;
@@ -147,10 +147,10 @@ td {
     border-radius: 10px;
 }
 
-.cajita{
+.cajita {
     margin-top: 25px;
-    margin-left:20px;
-    margin-right:20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #colBarrita {
@@ -167,7 +167,7 @@ td {
     position: fixed;
     height: 100%;
     overflow: auto;
-    
+
 }
 
 /* Sidebar links */
@@ -185,10 +185,10 @@ td {
 }
 
 /* Links on mouse-over 
-  .sidebar a:hover:not(.active) {
+.sidebar a:hover:not(.active) {
     background-color: #555;
     color: white;
-  }
+    }
   */
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
@@ -260,6 +260,7 @@ div.content {
     -webkit-appearance: none;
     /* Override default look */
     appearance: none;
+
     width: 25px;
     /* Set a specific slider handle width */
     height: 25px;
@@ -268,4 +269,35 @@ div.content {
     /* Green background */
     cursor: pointer;
     /* Cursor on hover */
+}
+
+
+.contenedor {
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.contenedorcito {
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+#desde {
+    width: 5px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+#hasta {
+    width: 5px;
+    margin-right: 20px;
+}
+
+.aja {
+    display: flex;
+    justify-content: center;
 }
