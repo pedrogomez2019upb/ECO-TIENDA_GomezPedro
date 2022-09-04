@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+#columna-tarjetas{
+
+    display: flex;
+
+}
+
+.container{
+
+    width: 100%;
+    display: flex;
+    box-sizing:content-box
+    
+}
+
+#card{
+
+    width: 230px;
+    height: 375px;
+    margin: 3px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgb(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    position: relative;
+    
+    
+}
+#card:hover{
+
+    box-shadow: 5px 5px 20px rgb(0,0,0,0.4);
+    transform:scale(1.1);
+    z-index:2;
+    
+    
+}
+
+#card:hover{
+
+    height: 410px;
+}
+
+#card img{
+    width: 90%;
+    height: 180px;
+    align-self: center;
+    padding: 0px 0px 0px 30px;
+    
+}
+
+#card .contenido{
+
+    text-align:center;
+    padding: 30px;
+    font-size: 14px;
+    
+    
+
+}
+.col-sm-10{
+    /*border: solid red;*/
+}
+.col-sm-10 .col-sm-2{
+
+    position: relative;
+}
+
+body {
+    font-family: Geneva, Verdana, sans-serif;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Barra de navegación */
+.imagen {
+    border-radius: 10%;
+    width: 200px;
+    height: auto;
+}
+
+
+
+.nav-links a {
+    color: black;
+}
+
+/* LOGO */
+.logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* NAVBAR MENU */
+#cajaBuscador {
+    margin-top: 30px;
+}
+
+#alineacion {
+    width: 600px;
+    border-radius: 80px;
+}
+
+#los3botoncitos {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#principal {
+    text-align: center;
+    border-bottom: 1px solid #5ccb5f;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+    position: relative;
+}
+
+.dropdown {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position: absolute;
+    /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+
+.dropdown li+li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown li:hover {
+    background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+    display: block;
+}
+
+/*Tablas */
+
+
+
+
+
+#verdePuro{
+
+    text-align: center;
+    font-size: small;
+    margin: 0px;
+    padding: 10px 10px 1px 10px;
+    color: #009929;
+    /*border:1px solid red;*/
+}
+
+/*SIDEBAR*/
+/* The side navigation menu */
+
+#filaBarrita {
+    /*border: 1px solid red;*/
+    width: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.cajita{
+    margin-top: 25px;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+#colBarrita {
+    /* border: 1px solid red;*/
+    width: auto;
+    padding: 10px;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    
+}
+
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+    background-color: #5ccb5f;
+    color: white;
+}
+
+/* Links on mouse-over 
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  */
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+/*SLIDER*/
+.slidecontainer {
+    width: 100%;
+    /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 100%;
+    /* Full-width */
+    height: 25px;
+    /* Specified height */
+    background: #d3d3d3;
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    opacity: 0.7;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: #04AA6D;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+
+/*Rangos*/
+
+#nombres{
+    font-size: 12px;
+}
+#rangos{
+    width: 80px;
+    height: 50px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    margin-left: 13px;
+    background-color: rgb(247,246,251);
+    border:1px solid gray;
+    border-radius: 3px;
+    
+    
+}
+
+#colium{
+    /* border:1px solid red;*/
+}
+
+/* NEW SLIDEBAR */
+input[type=range] {
+    height: 29px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 7px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #5CCB5F;
+    border-radius: 12px;
+    border: 0px solid #000000;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #5CCB5F;
+    border: 1px solid #5CCB5F;
+    height: 22px;
+    width: 22px;
+    border-radius: 17px;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #5CCB5F;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 7px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #5CCB5F;
+    border-radius: 12px;
+    border: 0px solid #000000;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #5CCB5F;
+    border: 1px solid #5CCB5F;
+    height: 22px;
+    width: 22px;
+    border-radius: 17px;
+    background: #FFFFFF;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 7px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #5CCB5F;
+    border: 0px solid #000000;
+    border-radius: 24px;
+    box-shadow: 0px 0px 0px #000000;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #5CCB5F;
+    border: 0px solid #000000;
+    border-radius: 24px;
+    box-shadow: 0px 0px 0px #000000;
+  }
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #5CCB5F;
+    border: 1px solid #5CCB5F;
+    height: 22px;
+    width: 22px;
+    border-radius: 17px;
+    background: #FFFFFF;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #5CCB5F;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #5CCB5F;
+  }
+  
