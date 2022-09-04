@@ -446,14 +446,14 @@ input[type=range] {
     height: 42px;
     background: red;
     border-radius: 50%;
-    position: relative;
+    position: absolute;
     top: 10px;
 }
 
 .discount h1{
 
     font-size: 9px;
-    position: absolute;
+    /*position: absolute;*/
     color: #fff;
     text-align: center;
     padding: 2px;

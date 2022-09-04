@@ -4,7 +4,7 @@ export const data = [{
     "title": "Aceite esencial de Clavo",
     "size": "12ML",
     "price": "7,99 €",
-    "discount":"50",
+    "discount":"",
     "unitValue": "Sale a: 665,83 €/L",
     "info": "El aceite esencial de clavo es conocido por sus increíbles propiedades antimicrobianas, antimicóticas, antisépticas, antivirales, afrodisíacas y estimulantes. Perfecto para utilizar en tus mezclas de Cosmética Natural, añadiendo unas cuantas gotas en tu crema corporal o aceite vegetal, conseguirás nutrir y lucir una piel radiante y 100% cuidad."
 },
