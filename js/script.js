@@ -40,10 +40,14 @@ function productoF(item,index){
     else{
         const panel =
         `
+        
         <div class="col-sm-3 producto" id="card" >
+        
         <figure>
             <img src="${item.img}" alt="figura1" >
         </figure>
+        <div class="favorito">
+
         <div class="contenido">
             <h6>${item.title}</h6>
             <h6>${item.size}</h6>
