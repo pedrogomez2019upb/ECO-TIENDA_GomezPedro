@@ -5,8 +5,6 @@ function call(){
 
 call();
 
-
-
 function productoF(item,index){
     const panel=
     `
