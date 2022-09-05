@@ -99,7 +99,8 @@ export const data = [{
 
     "id": 10,
     "title": "Aceite corporal Body Sculptor",
-    "size": "73,70 €",
+    "price": "73,70 €",
+    "size": "150 ml",
     "discount":"",
     "unitValue": "Sale a: 491,33 €/L",
     "img": "img/10.jpg",
