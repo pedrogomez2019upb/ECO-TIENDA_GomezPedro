@@ -9,7 +9,7 @@ function productoF(item, index) {
     if (item.discount != "") {
         const card =
             `
-            <div class="col-sm-1 producto" id="card" >
+            <div class="col-sm-3 producto" id="card" >
                             <div class="discount">
                             <h1>${item.discount}</h1>
                             </div>
@@ -24,9 +24,9 @@ function productoF(item, index) {
                                 <img src="${item.img}" alt="figura1" >
                             </figure>
                             <div class="contenido">
-                                <h6>${item.title}</h6>
-                                <h6>${item.size}</h6>
-                                <h7 class="precio">${item.price}</h7>
+                                <h6 style="font-family:sans-serif;font-size:12px;font-weight:bold;">${item.title}</h6>
+                                <h6 style="font-size:10px;">${item.size}</h6>
+                                <h7 class="precio" style="color:green;font-weight:bold;">${item.price}</h7>
                             </div>
                             <a class="btn btn-primary" style="font-size:10px;width:200px;height:30px;background-color:#efa229;border:1px solid white;border-radius:50px;text-align:center;color: white;">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket3" viewBox="0 0 16 16">
@@ -53,7 +53,13 @@ function productoF(item, index) {
         </figure>
         
         
-
+        <div class="favorito">
+        <figure>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+            </svg>
+        </figure>
+        </div>
         <div class="contenido">
         
             <h6 style="font-family:sans-serif;font-size:12px;font-weight:bold;">${item.title}</h6>
