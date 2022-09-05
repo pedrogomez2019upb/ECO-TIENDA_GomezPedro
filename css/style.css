@@ -1,0 +1,678 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+#columna-tarjetas{
+
+    display: flex;
+
+}
+
+.container{
+
+    width: 100%;
+    display: flex;
+    box-sizing:content-box
+    
+}
+
+#card{
+
+    width: 230px;
+    height: 350px;
+    margin: 3px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgb(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    position: relative;
+    
+    
+}
+#card:hover{
+
+    box-shadow: 5px 5px 20px rgb(0,0,0,0.4);
+    transform:scale(1.1);
+    z-index:2;
+    
+    
+}
+
+#card:hover{
+
+    height: 410px;
+}
+
+#card img{
+    width: 90%;
+    margin-top:10px;
+    height: 160px;
+    align-self: center;
+    padding: 0px 0px 0px 30px;
+    
+}
+
+#card .contenido{
+
+    text-align:center;
+    padding: 30px;
+    font-size: 14px;
+    
+    
+
+}
+
+#card .favorito {
+
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 220px;
+    top: 9px;
+    padding: 0%;
+    margin: 0%;
+
+}
+.col-sm-10{
+    /*border: solid red;*/
+}
+.col-sm-10 .col-sm-2{
+
+    position: relative;
+}
+
+body {
+    font-family: Geneva, Verdana, sans-serif;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Barra de navegación */
+.imagen {
+    border-radius: 10%;
+    width: 200px;
+    height: auto;
+}
+
+
+
+.nav-links a {
+    color: black;
+}
+
+/* LOGO */
+.logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* NAVBAR MENU */
+#cajaBuscador {
+    margin-top: 30px;
+}
+
+#alineacion {
+    width: 600px;
+    border-radius: 80px;
+}
+
+#los3botoncitos {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#principal {
+    text-align: center;
+    border-bottom: 1px solid #5ccb5f;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+
+.services {
+    position: relative;
+}
+
+/* DROPDOWN MENU */
+/* Dropdown Button */
+.dropbtn {
+    background-color: white;
+    color: #009929;
+    padding: 10px;
+    font-size: 10px;
+    border: none;
+    
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: left;
+    
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid rgb(210, 210, 210);
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: white;}
+/*Tablas */
+
+
+
+
+
+#verdePuro{
+
+    text-align: center;
+    font-size: small;
+    margin: 0px;
+    padding: 10px 10px 1px 10px;
+    color: #009929;
+    /*border:1px solid red;*/
+}
+
+/*SIDEBAR*/
+/* The side navigation menu */
+
+#filaBarrita {
+    /*border: 1px solid red;*/
+    width: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.cajita{
+    margin-top: 25px;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+#colBarrita {
+    /* border: 1px solid red;*/
+    width: auto;
+    padding: 10px;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    
+}
+
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+    background-color: #5ccb5f;
+    color: white;
+}
+
+/* Links on mouse-over 
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  */
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+/*SLIDER*/
+.slidecontainer {
+    width: 100%;
+    /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 100%;
+    /* Full-width */
+    height: 25px;
+    /* Specified height */
+    background: #d3d3d3;
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    opacity: 0.7;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: #04AA6D;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+
+/*Rangos*/
+
+#nombres{
+    font-size: 12px;
+}
+#rangos{
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    margin-left: 13px;
+    background-color: rgb(247,246,251);
+    border:1px solid gray;
+    border-radius: 3px;
+}
+
+#colium{
+    /* border:1px solid red;*/
+}
+
+/* NEW SLIDEBAR */
+input[type=range] {
+    height: 29px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 7px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #5CCB5F;
+    border-radius: 12px;
+    border: 0px solid #000000;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #5CCB5F;
+    border: 1px solid #5CCB5F;
+    height: 22px;
+    width: 22px;
+    border-radius: 17px;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #5CCB5F;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 7px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #000000;
+    background: #5CCB5F;
+    border-radius: 12px;
+    border: 0px solid #000000;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #5CCB5F;
+    border: 1px solid #5CCB5F;
+    height: 22px;
+    width: 22px;
+    border-radius: 17px;
+    background: #FFFFFF;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 7px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #5CCB5F;
+    border: 0px solid #000000;
+    border-radius: 24px;
+    box-shadow: 0px 0px 0px #000000;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #5CCB5F;
+    border: 0px solid #000000;
+    border-radius: 24px;
+    box-shadow: 0px 0px 0px #000000;
+  }
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 0px 0px 0px #5CCB5F;
+    border: 1px solid #5CCB5F;
+    height: 22px;
+    width: 22px;
+    border-radius: 17px;
+    background: #FFFFFF;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #5CCB5F;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #5CCB5F;
+  }
+  
+.discount{
+
+    width: 42px;
+    height: 42px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+}
+
+.discount h1{
+
+    font-size: 9px;
+    /*position: absolute;*/
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    margin-top: 8px;
+    font-weight: 900;
+}
+
+.discount{
+
+    width: 42px;
+    height: 42px;
+    background: red;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    border: 2px solid rgba(255, 0, 0, 0.882);
+}
+/*Buscador */
+.sbx-custom {
+    display: inline-block;
+    position: relative;
+    width: 500px;
+    height: 51px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-top:23px;
+  }
+  
+  .sbx-custom__wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .sbx-custom__input {
+    display: inline-block;
+    -webkit-transition: box-shadow .4s ease, background .4s ease;
+    transition: box-shadow .4s ease, background .4s ease;
+    border: 0;
+    border-radius: 26px;
+    box-shadow: inset 0 0 0 2px #5CCB5F;
+    background: #FFFFFF;
+    padding: 0;
+    padding-right: 78px;
+    padding-left: 22px;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    white-space: normal;
+    font-size: inherit;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+  
+  .sbx-custom__input::-webkit-search-decoration, .sbx-custom__input::-webkit-search-cancel-button, .sbx-custom__input::-webkit-search-results-button, .sbx-custom__input::-webkit-search-results-decoration {
+    display: none;
+  }
+  
+  .sbx-custom__input:hover {
+    box-shadow: inset 0 0 0 2px #3bb93e;
+  }
+  
+  .sbx-custom__input:focus, .sbx-custom__input:active {
+    outline: 0;
+    box-shadow: inset 0 0 0 2px #006414;
+    background: #FFFFFF;
+  }
+  
+  .sbx-custom__input::-webkit-input-placeholder {
+    color: #BBBBBB;
+  }
+  
+  .sbx-custom__input::-moz-placeholder {
+    color: #BBBBBB;
+  }
+  
+  .sbx-custom__input:-ms-input-placeholder {
+    color: #BBBBBB;
+  }
+  
+  .sbx-custom__input::placeholder {
+    color: #BBBBBB;
+  }
+  
+  .sbx-custom__submit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: inherit;
+    margin: 0;
+    border: 0;
+    border-radius: 0 25px 25px 0;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0;
+    width: 51px;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: inherit;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  
+  .sbx-custom__submit::before {
+    display: inline-block;
+    margin-right: -4px;
+    height: 100%;
+    vertical-align: middle;
+    content: '';
+  }
+  
+  .sbx-custom__submit:hover, .sbx-custom__submit:active {
+    cursor: pointer;
+  }
+  
+  .sbx-custom__submit:focus {
+    outline: 0;
+  }
+  
+  .sbx-custom__submit svg {
+    width: 21px;
+    height: 21px;
+    vertical-align: middle;
+    fill: #5CCB5F;
+  }
+  
+  .sbx-custom__reset {
+    display: none;
+    position: absolute;
+    top: 12px;
+    right: 51px;
+    margin: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: inherit;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    fill: rgba(0, 0, 0, 0.5);
+  }
+  
+  .sbx-custom__reset:focus {
+    outline: 0;
+  }
+  
+  .sbx-custom__reset svg {
+    display: block;
+    margin: 4px;
+    width: 19px;
+    height: 19px;
+  }
+  
+  .sbx-custom__input:valid ~ .sbx-custom__reset {
+    display: block;
+    -webkit-animation-name: sbx-reset-in;
+            animation-name: sbx-reset-in;
+    -webkit-animation-duration: .15s;
+            animation-duration: .15s;
+  }
+  
+  @-webkit-keyframes sbx-reset-in {
+    0% {
+      -webkit-transform: translate3d(-20%, 0, 0);
+              transform: translate3d(-20%, 0, 0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: none;
+              transform: none;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes sbx-reset-in {
+    0% {
+      -webkit-transform: translate3d(-20%, 0, 0);
+              transform: translate3d(-20%, 0, 0);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: none;
+              transform: none;
+      opacity: 1;
+    }
+  }
